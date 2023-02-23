@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    border: 3px solid black;
+    width: 575px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "visor visor visor visor"
+    "mais menos vezes dividir"
+    "sete oito nove igual"
+    "quatro cinco seis igual"
+    "um dois tres igual"
+    "zero ponto c igual"    ;
+    column-gap: 25px;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #999999;
+}
+
+main div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visor{
+    grid-area: visor;
+    background-color: #888888;
+    border-bottom: 3px solid black;
+}
+
+
+.soma{
+    grid-area: mais;
+}
+
+div:not(.visor){
+    cursor: pointer;
+}
+
+.subtracao{
+    grid-area: menos;
+}
+
+.multiplicacao{
+    grid-area: vezes;
+}
+
+.divisao{
+    grid-area: dividir;
+}
+
+.sete{
+    grid-area: sete;
+}
+
+.oito{
+    grid-area: oito;
+}
+
+.nove{
+    grid-area: nove;
+}
+
+.igual{
+    grid-area: igual;
+}
+
